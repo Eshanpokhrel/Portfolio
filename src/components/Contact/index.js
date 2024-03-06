@@ -42,10 +42,11 @@ const Contact = () => {
                     <AnimatedLetters strArray={['C','o','n','t','a','c','t',' ','m','e']} idx={15} letterClass={letterClass}/>
                 </h1>
                 <p>
-                    I am interested for the opportunities - interns or large projects. However if you have any questions you can reach out to me through the form below.
+                    I am interested for the opportunities - interns or large projects. However if you have any questions you can reach out to me through the provided form.
                     <h3>It works!!!</h3>
                 </p>
-                <div className="contact-form">
+            </div>
+            <div className="contact-form">
                     <form ref={refForm} onSubmit={sendEmail}>
                         <ul>
                             <li className='half'>
@@ -66,7 +67,6 @@ const Contact = () => {
                         </ul>
                     </form>
                 </div>
-            </div>
         </div>
         <Loader type='pacman'/>
     </>

@@ -6,6 +6,7 @@
         transform: translateY(-50%);
         width: 40%;
         max-height: 90%;
+        z-index: 1;
     }
 
     h1{
@@ -33,8 +34,8 @@
             position: absolute;
             margin-top: 80px;
             left: -45px;
-            animation: fadeIn 1s 3.5s backwards;
             opacity: 0.6;
+            animation: fadeIn 1s 3.5s backwards;
         }
 
         img{
@@ -77,4 +78,102 @@
             color: #333;
         }
     }
+
+    .logo-container{
+        z-index: 0;
+        width: 400px;
+        height: 600px;
+        position: absolute;
+        top: 0;
+        right: 15%;
+        bottom: 0;
+        left: auto;
+        margin: auto;
+    
+        h3{
+            position: absolute;
+            right: 76px;
+            bottom: 87px;
+            color: yellow;
+            font-size: 28px;
+            font-family: 'La Belle Aurore';
+        }
+    
+        svg{
+            position: absolute;
+            width: 80%;
+            height: auto;
+            top: 15%;
+            right: 0;
+            animation: popIn 2s ease-in-out;
+        }
+    
+        @keyframes popIn {
+            0%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+    
+        .text-animate-hover{
+            &:hover{
+                color: white;
+            }
+        }
+    }
 }
+
+// @media screen and (max-width: 800px) {
+//     .tags,
+//     .home-page h1:before,
+//     .home-page h1:after {
+//       display: none;
+//     }
+  
+//     .home-page .text-zone {
+//       position: initial;
+//       width: 100%;
+//       transform: none;
+//       padding: 10px;
+//       box-sizing: border-box;
+//     }
+  
+//     .home-page .flat-button {
+//       float: none;
+//       display: block;
+//       margin: 20px auto 0 auto;
+//       width: 124px;
+//     }
+  
+//     .logo-container {
+//       position: relative;
+//       width: 100px;
+//       height: auto;
+//       top: 50px;
+//       right: 0;
+//       box-sizing: border-box;
+//       margin: auto;
+//       left: 0;
+//     }
+  
+//     .logo-container svg {
+//       position: absolute;
+//       top: auto;
+//       right: auto;
+//       bottom: auto;
+//       left: 0;
+//       margin: auto;
+//       opacity: 0.5;
+//     }
+//     h3{
+//         // position: absolute;
+//         // right: 156px;
+//         bottom: 87px;
+//         color: yellow;
+//         font-size: 28px;
+//         font-family: 'La Belle Aurore';
+//         opacity: 0.4;
+//     }
+// }

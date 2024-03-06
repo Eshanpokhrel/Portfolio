@@ -4,7 +4,6 @@ import './index.scss'
 import tailwindL from '../../assets/images/tw.png'
 import React, { useEffect, useState } from 'react'
 import {  faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
 import Loader from 'react-loaders'
 
 const About = () => {
