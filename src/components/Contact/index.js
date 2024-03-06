@@ -5,7 +5,6 @@ import React, { useEffect, useRef, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import emailjs from '@emailjs/browser'
 import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
 
 const Contact = () => {
 
