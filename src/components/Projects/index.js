@@ -47,11 +47,11 @@ const Project = () => {
           <a href="https://eshanpokhrel.github.io/MeomoryGame/" target="_blank" rel="noopener noreferrer">
             <Cards imgUrl={memory} title={"Brain Blitz"} desc="A fun game where you have to match all of the same fruits to win, but the time is running out."/>
           </a>
-        </div>
-        <div>
-        <a href="https://github.com/Eshanpokhrel?tab=repositories" target="_blank" rel="noopener noreferrer">
-          <button className='more-button'>Show More</button>
-        </a>
+          <div>
+            <a href="https://github.com/Eshanpokhrel?tab=repositories" target="_blank" rel="noopener noreferrer">
+              <button className='more-button'>Show More</button>
+            </a>
+          </div>
         </div>
       </div>
       <Loader type='pacman'/>

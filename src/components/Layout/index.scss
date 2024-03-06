@@ -113,23 +113,89 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1250px) {    
     .tags{
-        left: 80px;
+        bottom: 15px;
+        left: 85px;
         font-size: 18px;
         font-family: 'La Belle Aurore';
     }
+    
+    .bottom-tag-html{
+        margin-left: -16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .top-tags{
+        top: 0px;
+    }
+    
+    .tags{
+        bottom: 100px;
+        left: 15px;
+        font-size: 12px;
+        font-family: 'La Belle Aurore';
+    }
+    
     .bottom-tag-html{
         margin-left: -10px;
     }
-    .container{
-        width: 100%;
-        will-change: contents;
-        height: 30%;
-        min-height: 256px;
+
+    .container {
+        // height: auto;
+        // min-height: auto;
+    
+        &.contact-page,
+        &.about-page,
+        &.project-page {
+          .text-zone {
+            position: initial;
+            transform: none;
+            width: 100%;
+            display: block;
+            padding: 20px;
+            box-sizing: border-box;
+          }
+        }
+    }
+
+    .text-zone{
+        width: 100% !important;
+        left: 10% !important;
+        top: 35% !important;
+
+        h1{
+            font-size: 47px !important;
+            line-height: 40px !important;
+
+            &::before{
+                font-size: 12px !important;
+                position: absolute;
+                margin-top: -10px;
+                left: 0 !important;
+                opacity: 1 !important;
+                line-height: 1px !important;
+            }
+            &::after{
+                font-size: 12px !important;
+                position: absolute;
+                left: -20px !important;
+                line-height: 1px ;
+            }
+        }
+    }
+  }
+
+@media screen and (max-width: 481px){
+    .text-zone{
         position: absolute;
-        opacity: 0;
-        top: 8%;
-        margin: 10px 30%;
+        left: 10% !important;
+        max-height: 60% !important;
+
+        h1{
+            font-size: 27px !important;
+            line-height: 40px !important;
+        }
     }
 }

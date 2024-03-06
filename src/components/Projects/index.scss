@@ -1,9 +1,9 @@
 .project-container{
-    // flex: 1;
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 50%;
-    height: 90%;
+    height: auto;
     top: 0;
     padding-top: 1%;
     margin-left: 0;
@@ -12,12 +12,13 @@
     animation: fadeInUp 2s;
     animation-fill-mode: forwards;
     clear: both;
+    overflow: visible;
 }
 .more-button{
     flex: 1;
     position: absolute;
-    top: 93%;
-    right: 25%;
+    margin-top: 20px;
+    right: 45%;
     border: 1px solid yellow;
     height: 40px;
     width: 100px;
@@ -37,42 +38,14 @@
     }
 }
 
-// @media screen and (max-width:990px) {
-//     .gpt3__blog-container{
-//         flex-direction: column;
-//     }
-
-//     .gpt3__blog-container_grpA{
-//         margin: 2rem 0;
-//     }
-
-//     .gpt3__blog-container_grpA .gpt3__blog-container_article{
-//         width: 48%;
-//     }
-
-//     .gpt3__blog-container_grpA .gpt3__blog-container_article-image{
-//         height: 250px;
-//     }
-// }
-
-// @media screen and (max-width:700px) {
-//     .gpt3__blog-container_grpB{
-//         grid-template-columns: repeat(1, 1fr);
-//     }
-
-//     .gpt3__blog-container_grpA .gpt3__blog-container_article{
-//         width: 100%;
-//     }
-
-//     .gpt3__blog-heading h1{
-//         font-size: 46px;
-//         line-height: 52px;
-//     }
-// }
-
-// @media screen and (max-width:550px) {
-//     .gpt3__blog-heading h1{
-//         font-size: 34px;
-//         line-height: 42px;
-//     }
-// }
+@media screen and (max-width: 768px) {
+    .project-container{
+        padding: 20px;
+        position: relative;
+        left: 10%;
+        width: 70%;
+    }
+    .more-button{
+        right: 36%;
+    }
+}

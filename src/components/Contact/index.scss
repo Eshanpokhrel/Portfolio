@@ -48,6 +48,10 @@
         color: white;
         padding: 0 20px;
         box-sizing: border-box;
+
+        &::placeholder{
+            color: white;
+        }
     }
 
     textarea{
@@ -60,6 +64,10 @@
         padding: 20px;
         min-height: 150px;
         box-sizing: border-box;
+
+        &::placeholder{
+            color: white;
+        }
     }
 
     .flat-button{
@@ -72,5 +80,15 @@
         border: 1px solid #ffd700;
         float: right;
         border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form{
+        padding: 20px;
+        position: relative;
+        left: 10%;
+        width: 70%;
+        height: 445px;
     }
 }

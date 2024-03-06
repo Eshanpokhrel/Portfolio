@@ -53,7 +53,7 @@
         color: #4bd000;
         font-size: 14px;
         font-weight: 400;
-        margin-top: 20px;
+        margin-top: 60px;
         font-family: 'sans-serif';
         letter-spacing: 3px;
         animation: fadeIn 1s 3.7s backwards;
@@ -125,55 +125,44 @@
     }
 }
 
-// @media screen and (max-width: 800px) {
-//     .tags,
-//     .home-page h1:before,
-//     .home-page h1:after {
-//       display: none;
-//     }
-  
-//     .home-page .text-zone {
-//       position: initial;
-//       width: 100%;
-//       transform: none;
-//       padding: 10px;
-//       box-sizing: border-box;
-//     }
-  
-//     .home-page .flat-button {
-//       float: none;
-//       display: block;
-//       margin: 20px auto 0 auto;
-//       width: 124px;
-//     }
-  
-//     .logo-container {
-//       position: relative;
-//       width: 100px;
-//       height: auto;
-//       top: 50px;
-//       right: 0;
-//       box-sizing: border-box;
-//       margin: auto;
-//       left: 0;
-//     }
-  
-//     .logo-container svg {
-//       position: absolute;
-//       top: auto;
-//       right: auto;
-//       bottom: auto;
-//       left: 0;
-//       margin: auto;
-//       opacity: 0.5;
-//     }
-//     h3{
-//         // position: absolute;
-//         // right: 156px;
-//         bottom: 87px;
-//         color: yellow;
-//         font-size: 28px;
-//         font-family: 'La Belle Aurore';
-//         opacity: 0.4;
-//     }
-// }
+@media screen and (max-width: 768px) {
+    .logo-container{
+        h3{
+            display: none;
+        }
+    
+        svg{
+            width: 50% !important;
+            height: 400px !important;
+            top: 0 !important;
+            opacity: 0.3;
+        }
+    }
+    .flat-button{
+        color: white !important;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .home-page h1::after{
+        top: 28%;
+        font-size: 12px;
+        left: 0 !important;
+        opacity: 1;
+    }
+    
+    .logo-container{
+        svg{
+            width: 70% !important;
+        }
+    }
+    h2{
+        margin-top: 25px !important;
+    }
+    h3{
+        display: flex !important;
+        bottom: 36% !important;
+        right: 15% !important;
+        opacity: 0.4;
+    }
+}
