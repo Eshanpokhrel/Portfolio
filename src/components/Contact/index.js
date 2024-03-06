@@ -4,6 +4,8 @@ import './index.scss'
 import React, { useEffect, useRef, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import emailjs from '@emailjs/browser'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 const Contact = () => {
 
@@ -15,6 +17,15 @@ const Contact = () => {
           setLetterClass("text-animate-hover")
         },3000)
       },[])
+
+      const showSwal = () => {
+        Swal.fire({
+          title: "<b>Eshan Pokhrel</b>,",
+          footer: "<b>Gokarneshwor-1, Kathmandu, Nepal.</b>",
+          showCloseButton: true,
+          html: "<h2>eshanpokhrel12@gmail.com</h2>",
+        })
+      }
 
       const sendEmail = (e) => {
         e.preventDefault()
@@ -45,6 +56,14 @@ const Contact = () => {
                     I am interested for the opportunities - interns or large projects. However if you have any questions you can reach out to me through the provided form.
                     <h3>It works!!!</h3>
                 </p>
+            </div>
+            <button className='info-button' onClick={showSwal}>My Info</button>
+            <div className="info-map">
+                Eshan Pokhrel,
+                <br />
+                Gokarneshwor-1, Kathmandu, Nepal.
+                <br />
+                <span>eshanpokhrel12@gmail.com</span>
             </div>
             <div className="contact-form">
                     <form ref={refForm} onSubmit={sendEmail}>
