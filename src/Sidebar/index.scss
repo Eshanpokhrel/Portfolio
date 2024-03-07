@@ -1,5 +1,5 @@
 .nav-bar{
-    background: #66335c;
+    background: #333333;
     width: 60px;
     height: 100%;
     position: absolute;
@@ -116,7 +116,7 @@
                 line-height: 20px;
 
                 &:hover svg{
-                    color: #4d4d4e;
+                    opacity: 0.6;
                 }
             }
         }
@@ -139,9 +139,10 @@
         justify-content: center;
         bottom: 10px;
         gap: 20px;
+        z-index: 9999;
 
-        a{
-            font-size: 20px !important;
+        a:hover svg{
+            opacity: 1 !important;
         }
       }
   
@@ -150,7 +151,7 @@
         width: 100%;
         top: 0;
         left: 0;
-        background: #66335c;
+        background: #333333;
         color: white;
         height: 70px;
         margin: 0;

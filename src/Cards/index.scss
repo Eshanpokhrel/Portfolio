@@ -27,6 +27,7 @@
     flex-direction: column;
     padding: 0 1.5rem;
     height: 100%;
+    // text-decoration: none;
 }
 
 .desc-container h3{
@@ -46,6 +47,7 @@
 
 @media screen and (max-width:786px) {
     .desc-container h3{
+        opacity: 1;
         line-height: 10px;
         font-size: 14px;
     }

@@ -146,7 +146,7 @@ const Contact = () => {
                     </form>
                 </div>
         </div>
-        <Loader type='pacman'/>
+        <Loader type='ball-zig-zag-deflect'/>
     </>
   )
 }

@@ -9,10 +9,8 @@ const Cards = ({ imgUrl, title, desc }) => {
         <img src={ imgUrl } alt="blog" />
       </div>
       <div className="desc-container">
-        <div>
           <h3>{ title }</h3>
           <p>{ desc }</p>
-        </div>
       </div>   
     </div>
   )

@@ -97,7 +97,7 @@ const Home = () => {
           </h3>
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader type="line-scale-pulse-out" />
     </>
   )
 }
