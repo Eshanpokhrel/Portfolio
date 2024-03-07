@@ -5,6 +5,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import emailjs from '@emailjs/browser'
 import Swal from 'sweetalert2'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCopy } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
 
@@ -19,12 +21,45 @@ const Contact = () => {
 
       const showSwal = () => {
         Swal.fire({
-          title: "<b>Eshan Pokhrel</b>,",
-          footer: "<b>Gokarneshwor-1, Kathmandu, Nepal.</b>",
-          showCloseButton: true,
-          html: "<h2>eshanpokhrel12@gmail.com</h2>",
-        })
-      }
+            title: "<b>Eshan Pokhrel</b>,",
+            footer: "<b>Gokarneshwor-1, Kathmandu, Nepal.</b>",
+            showCloseButton: true,
+            confirmButtonText: "Copy mail",
+            html: `<h2 id="email">eshanpokhrel12@gmail.com</h2>`, // Added an ID to the email text
+        }).then((result) => {
+            if (result.isConfirmed) {
+                const emailElement = document.getElementById("email");
+                if (emailElement) {
+                    const emailText = emailElement.innerText;
+
+                    navigator.clipboard.writeText(emailText)
+                        .then(() => {
+                            Swal.fire("Copied!", "Mail", "success");
+                        })
+                        .catch((error) => {
+                            console.error("Failed to copy text: ", error);
+                            Swal.fire("Error", "Failed to copy email.", "error");
+                        });
+                } else {
+                    Swal.fire("Error", "Email element not found.", "error");
+                }
+            }
+        });};
+    
+    //   const showSwal = () => {
+    //     Swal.fire({
+    //       title: "<b>Eshan Pokhrel</b>,",
+    //       footer: "<b>Gokarneshwor-1, Kathmandu, Nepal.</b>",
+    //       showCloseButton: true,
+    //       confirmButtonText: "Copy mail",
+    //       html: "<h2>eshanpokhrel12@gmail.com</h2>",
+    //     }).then((result) => {
+    //         /* Read more about isConfirmed, isDenied below */
+    //         if (result.isConfirmed) {
+    //           Swal.fire("copied!", "", "success");
+    //         }
+    //       });
+    //   }
 
       const sendEmail = (e) => {
         e.preventDefault()
@@ -37,11 +72,24 @@ const Contact = () => {
             )
             .then(() => {
                 alert('The email was sent successfully')
+                // Swal.fire("Sent!", "", "success");
                 window.location.reload(false)
             },
             () => {
                 alert('Message not sent!!')
+                // Swal.fire("Failed!", "", "error");
             })
+      }
+
+      const copyBtn = () => {
+        navigator.clipboard.writeText('eshanpokhrel12@gmail.com')
+         .then(() => {
+                Swal.fire("Copied!", "Mail", "success");
+            })
+         .catch((error) => {
+                console.error("Failed to copy text: ", error);
+                Swal.fire("Error", "Failed to copy email.", "error");
+            });
       }
 
   return (
@@ -63,6 +111,18 @@ const Contact = () => {
                 Gokarneshwor-1, Kathmandu, Nepal.
                 <br />
                 <span>eshanpokhrel12@gmail.com</span>
+                <FontAwesomeIcon 
+                    icon={faCopy} 
+                    color='whitesmoke' 
+                    style={{
+                        position:'absolute',
+                        right:"45px",
+                        bottom:"25px",
+                        color:"rgba(240, 240, 240, 0.73)",
+                        fontSize:"12px"
+                    }} 
+                    onClick={copyBtn}
+                />
             </div>
             <div className="contact-form">
                     <form ref={refForm} onSubmit={sendEmail}>

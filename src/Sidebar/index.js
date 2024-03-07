@@ -47,17 +47,17 @@ const Sidebar = () => {
           className='hamburger-icon' />
       <ul >
         <li>
-            <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/eshan-pokhrel-109b15163/' onClick={() => setShowNav(false)}>
+            <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/eshan-pokhrel-109b15163/'>
                 <FontAwesomeIcon icon={faLinkedin} color='#0a66c2'/>
             </a>
         </li>
         <li>
-            <a target='_blank' rel='noreferrer' href='https://github.com/Eshanpokhrel' onClick={() => setShowNav(false)}>
+            <a target='_blank' rel='noreferrer' href='https://github.com/Eshanpokhrel'>
                 <FontAwesomeIcon icon={faGithub} color='black'/>
             </a>
         </li>
         <li>
-            <a target='_blank' rel='noreferrer' href='https://www.facebook.com/eshan.pokhrel.5' onClick={() => setShowNav(false)}>
+            <a target='_blank' rel='noreferrer' href='https://www.facebook.com/eshan.pokhrel.5'>
                 <FontAwesomeIcon icon={faFacebook} color='#0866ff'/>
             </a>
         </li>
