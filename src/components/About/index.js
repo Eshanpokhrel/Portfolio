@@ -23,9 +23,9 @@ const About = () => {
                 <h1>
                     <AnimatedLetters letterClass={letterClass} strArray={['A','b','o','u','t',' ','m','e']} idx={15}/>
                 </h1>
-                <p>I'm a very ambitious front-end enthusiast looking for a role in an IT company with the opportunity to work with the latest technologies on challenging and diverse projects.</p>
+                <p>I'm a very ambitious front-end enthusiast looking for a role in an IT company with the opportunity to work on challenging and diverse projects.</p>
+                <p>With my skills in technologies like <i><b>React, Next.js, Tailwind, Figma, Git,</b></i> I bring a dynamic edge to web development. Let's collaborate to build something extraordinary together.</p>
                 <p>I'm quietly confident, naturally curious and prepetually working on improving my chops one design problem at a time.</p>
-                <p> If I need to define myself in one sentence that would be an ambitious, curious, a sport fanatic and tech-obsessed!!!</p>
             </div>
             <div className="stage-cube-cont">
                 <div className="cubespinner">

@@ -99,10 +99,7 @@ const Contact = () => {
                 <h1>
                     <AnimatedLetters strArray={['C','o','n','t','a','c','t',' ','m','e']} idx={15} letterClass={letterClass}/>
                 </h1>
-                <p>
-                    I am interested for the opportunities - interns or large projects. However if you have any questions you can reach out to me through the provided form.
-                    <h3>It works!!!</h3>
-                </p>
+                <p>If you have any questions you can reach out to me through the provided form.</p>
             </div>
             <button className='info-button' onClick={showSwal}>My Info</button>
             <div className="info-map">
