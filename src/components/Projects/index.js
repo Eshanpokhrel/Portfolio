@@ -38,7 +38,7 @@ const Project = () => {
           <a href="https://cars-eob2.vercel.app/" target="_blank" rel="noopener noreferrer">
             <Cards imgUrl={cars} title={"Cars"} desc="A web application where you can search for cars through different filters like brand, model, fuel-type, year. "/>
           </a>
-          <a href="/project" rel="noopener noreferrer">
+          <a href="https://gpt-3-jet.vercel.app/" target="_blank" rel="noopener noreferrer">
             <Cards imgUrl={gpt3} title={"GPT-3"} desc="A figma design implementation of a landing page of GPT-3. "/>
           </a>
           {/* <a href="https://eshanpokhrel.github.io/quizGame/" target="_blank" rel="noopener noreferrer">
