@@ -144,6 +144,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    h2{
+        letter-spacing: 2px !important;
+    }
     .logo-container{
         h3{
             display: none;
