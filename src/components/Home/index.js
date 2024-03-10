@@ -67,7 +67,7 @@ const Home = () => {
               idx={19}
             />
           </h1>
-          <h2>Frontend Developer / ReactJs / NextJS / Javascript</h2>
+          <h2><b>Frontend Developer / ReactJs / NextJS / Javascript</b></h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
