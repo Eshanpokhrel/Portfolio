@@ -69,7 +69,7 @@ const Home = () => {
           </h1>
           <h2><b>Frontend Developer / ReactJs / NextJS / Javascript</b></h2>
           <Link to="/contact" className="flat-button">
-            CONTACT ME
+            <b>CONTACT ME</b>
           </Link>
         </div>
         <div className="logo-container">
