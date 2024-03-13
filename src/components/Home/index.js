@@ -79,9 +79,9 @@ const Home = () => {
           </svg> */}
           <svg
             id="img"
-            width="196"
-            height="261"
-            viewBox="0 0 196 261"
+            width="210"
+            height="268"
+            viewBox="0 0 210 268"
             fill="transparent"
           >
             <mask
