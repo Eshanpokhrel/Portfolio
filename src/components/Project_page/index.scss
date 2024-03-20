@@ -1,0 +1,114 @@
+.project-showcase {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: white;
+    overflow: auto;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}
+
+.parallax-image {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.parallax-image-01 {
+    background-image: url("../../assets/images/Car\ Hub.png");
+}
+
+.parallax-image-03 {
+    background-image: url("../../assets/images/Clock.png");
+
+}
+
+.parallax-image-02 {
+    background-image: url("../../assets/images/Eshan\ Pokhrel.png");
+}
+
+.parallax-image-04 {
+    background-image: url("../../assets/images/Kanban.png");
+}
+
+.parallax-image-06 {
+    background-image: url("../../assets/images/Memory\ Game.png");
+}
+
+.parallax-image-05 {
+    background-image: url("../../assets/images/Movies.png");
+}
+
+.parallax-image-07 {
+    background-image: url("../../assets/images/React\ App.png");
+}
+
+.parallax-image-08 {
+    background-image: url("../../assets/images/Test.png");
+}
+
+.parallax-image-09 {
+    background-image: url("../../assets/images/TTT.png");
+}
+
+section {
+    padding: 4rem;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+    background: #555555;
+    
+    h2 {
+        font-size: 43px;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+h2:hover{
+    color: white;
+}
+
+a{
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.back_btn{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+    color: yellow;
+    cursor: pointer;
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    0%{
+        text-shadow: 0 0 10px white;
+    }
+    50%{
+        text-shadow: 0 0 30px white;
+    }
+    100%{
+        text-shadow: 0 0 10px white;
+    }
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-family: 'coolvetica';
+    font-size: 18px;
+}

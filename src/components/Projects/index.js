@@ -9,8 +9,15 @@ import memory from '../../assets/images/memory.png'
 import React, { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import Cards from '../../Cards'
+import { useNavigate } from 'react-router-dom'
 
 const Project = () => {
+
+  const navigate = useNavigate();
+
+  const handleNavigateToFormPage = () => {
+    navigate('/projectPage');
+  };
 
   const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -48,9 +55,10 @@ const Project = () => {
             <Cards imgUrl={memory} title={"Brain Blitz"} desc="A fun game where you have to match all of the same fruits to win, but the time is running out."/>
           </a>
           <div>
-            <a href="https://github.com/Eshanpokhrel?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <button onClick={handleNavigateToFormPage} className='more-button'>Show More</button>
+            {/* <a href="https://github.com/Eshanpokhrel?tab=repositories" target="_blank" rel="noopener noreferrer">
               <button className='more-button'>Show More</button>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
