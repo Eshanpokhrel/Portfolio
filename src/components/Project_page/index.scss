@@ -113,10 +113,11 @@ footer{
     font-size: 18px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1250px){
     .parallax-image {
         background-size: contain;
         background-repeat: no-repeat;
+        height: 65vh;
     }
 
     footer{
