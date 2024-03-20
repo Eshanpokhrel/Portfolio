@@ -12,7 +12,7 @@
 .parallax-image {
     display: block;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -111,4 +111,24 @@ footer{
     height: 80px;
     font-family: 'coolvetica';
     font-size: 18px;
+}
+
+@media screen and (max-width: 768px){
+    .parallax-image {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    footer{
+        height: 50px;
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 35px !important;
+    }
+
+    section{
+        font-size: 16px;
+    }
 }
