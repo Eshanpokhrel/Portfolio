@@ -4,6 +4,7 @@
     place-items: center;
     color: white;
     overflow: auto;
+    overflow-x: hidden;
     opacity: 0;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
@@ -77,6 +78,35 @@ h1:hover{
 a{
     color: #ffd700;
     text-decoration: none;
+}
+
+.scroll-alert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    animation: fadeOut 6s backwards;
+
+    p{
+        position: absolute;
+        top: 0;
+
+    }
+
+    i{
+        position: absolute;
+        top: 15%;
+        font-size: 36px;
+    }
+
 }
 
 .back_btn{

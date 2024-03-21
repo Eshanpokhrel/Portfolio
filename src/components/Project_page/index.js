@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './index.scss'
 import { useNavigate } from 'react-router-dom';
 import Loader from 'react-loaders'
 
 const ProjectPage = () => {
+
+    const [isVisible, setIsVisible] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsVisible(false);
+        }, 4000);
+    return () => clearTimeout(timer);
+    }, []);
+    
 
     const navigate = useNavigate();
 
@@ -14,6 +24,12 @@ const ProjectPage = () => {
   return (
     <>
     <div className='project-showcase'>
+        {isVisible && 
+            <div className="scroll-alert">
+                <p>Scroll Down</p>
+                <i class='bx bx-mouse bx-fade-up' ></i>
+            </div>
+        }
         <div class="back_btn" onClick={handleNavigateToFormPage}>
             Back
         </div>
