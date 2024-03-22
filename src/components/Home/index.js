@@ -3,6 +3,7 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import { Link } from 'react-router-dom'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
+import cv from '../../assets/cv/cv.pdf'
 
 import Loader from 'react-loaders'
 
@@ -71,6 +72,9 @@ const Home = () => {
           <Link to="/contact" className="flat-button">
             <b>CONTACT ME</b>
           </Link>
+          <a href={cv} download className="flat-button">
+            <b>DOWNLOAD CV</b>
+          </a>
         </div>
         <div className="logo-container">
           {/* <img src={e} alt="e" /> */}
