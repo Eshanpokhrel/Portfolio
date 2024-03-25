@@ -4,7 +4,8 @@ import movie from '../../assets/images/movie.png'
 import cars from '../../assets/images/cars.png'
 import gpt3 from '../../assets/images/gpt3.png'
 // import quiz from '../../assets/images/quiz.png'
-import memory from '../../assets/images/memory.png'
+// import memory from '../../assets/images/memory.png'
+import iPhone from '../../assets/images/iP-15.png'
 
 import React, { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
@@ -50,9 +51,12 @@ const Project = () => {
           </a>
           {/* <a href="https://eshanpokhrel.github.io/quizGame/" target="_blank" rel="noopener noreferrer">
             <Cards imgUrl={quiz} title={"Quiz"} desc="A simple and fun quiz app made from HTML5, CSS3 and Javascript to enhance your knowledge. "/>
-          </a> */}
+          </a>
           <a href="https://eshanpokhrel.github.io/MeomoryGame/" target="_blank" rel="noopener noreferrer">
             <Cards imgUrl={memory} title={"Brain Blitz"} desc="A fun game where you have to match all of the same fruits to win, but the time is running out."/>
+          </a> */}
+          <a href="https://iphone-15-pro-six.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <Cards imgUrl={iPhone} title={"iPhone 15 Pro"} desc="A clone of Apple's new iPhone's website using React, Tailwind, GSAP and ThreeJs."/>
           </a>
           <div>
             <button onClick={handleNavigateToFormPage} className='more-button'>Show More</button>

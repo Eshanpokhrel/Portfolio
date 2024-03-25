@@ -47,6 +47,13 @@ const ProjectPage = () => {
             </a>
             <p>A personal portfolio made with React and SCSS, showcasing all the projects and skills that I possess. With my contact information and everything you need to know about me. Used animate.css for the animation and applied SVG animation.</p>
         </section>
+        <div class="parallax-image parallax-image-10"></div>
+        <section>
+            <a target="_blank" rel="noreferrer" href="https://iphone-15-pro-six.vercel.app/" >
+                <h1>iPhone 15 Pro</h1>
+            </a>
+            <p>A clone of Apple's iPhone 15 Pro website, using React, Tailwind CSS, ThreeJs and GSAP with vite. It contains multiple scroll triggred animations, a 3D model of both 15 Pro and 15 Pro Max, which you can play with colors and move around to view from desired angle.</p>
+        </section>
         <div class="parallax-image parallax-image-03"></div>
         <section>
             <a target="_blank" rel="noreferrer" href="https://eshanpokhrel.github.io/clock/">

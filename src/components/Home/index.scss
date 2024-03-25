@@ -72,6 +72,8 @@
         float: left;
         animation: fadeIn 1s 4s backwards;
         white-space: nowrap;
+        width: 145px;
+        text-align: center;
 
         &:hover{
             background-color: #ffd700;
