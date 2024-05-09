@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Loader from 'react-loaders'
 import ProjectLayout from '../Project_Layout';
+import helou from '../../assets/images/helou.png'
 import movie from '../../assets/images/movie.png'
 import cars from '../../assets/images/cars.png'
 import gpt3 from '../../assets/images/gpt3.png'
@@ -21,7 +22,7 @@ const ProjectPage = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsVisible(false);
-        }, 4000);
+        }, 3000);
     return () => clearTimeout(timer);
     }, []);
     
@@ -37,7 +38,6 @@ const ProjectPage = () => {
     <div className='project-showcase'>
         {isVisible && 
             <div className="scroll-alert">
-                <p>Scroll Down</p>
                 <i class='bx bx-mouse bx-fade-up' ></i>
             </div>
         }
@@ -45,6 +45,12 @@ const ProjectPage = () => {
             Back
         </div>
        
+       <ProjectLayout
+        imgUrl={ helou }
+        title={"helou (A real time chat app)"}
+        link={"https://helou.onrender.com"}
+        desc={"A fullstack chat application where you can chat in real time with the help of socket io, made with MERN Stack with TailwindCSS, DaisyUi, full secured application JWT and BcryptJS for authorization and password hashing with vary fast and optimized performance."}
+        />
        <ProjectLayout
         imgUrl={ cars }
         title={"Car Showcase"}

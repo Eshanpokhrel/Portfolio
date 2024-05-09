@@ -1,12 +1,10 @@
 import Loader from 'react-loaders'
 import './index.scss'
 import movie from '../../assets/images/movie.png'
-import cars from '../../assets/images/cars.png'
 import gpt3 from '../../assets/images/gpt3.png'
-// import quiz from '../../assets/images/quiz.png'
-// import memory from '../../assets/images/memory.png'
-import iPhone from '../../assets/images/iP-15.png'
 
+import iPhone from '../../assets/images/iP-15.png'
+import helou from '../../assets/images/helou.png'
 import React, { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import Cards from '../../Cards'
@@ -43,26 +41,17 @@ const Project = () => {
           <a href="https://movie-app-one-lilac.vercel.app/" target="_blank" rel="noopener noreferrer">
             <Cards imgUrl={movie} title={"Movies"} desc="A web application where you can search movies and get torrent links to download the movies. "/>
           </a>
-          <a href="https://cars-eob2.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <Cards imgUrl={cars} title={"Cars"} desc="A web application where you can search for cars through different filters like brand, model, fuel-type, year. "/>
+          <a href="https://helou.onrender.com/" target="_blank" rel="noopener noreferrer">
+            <Cards imgUrl={helou} title={"helou"} desc="A fullstack application where you can chat in real time, made with MERN Stack and Socketio."/>
           </a>
           <a href="https://gpt-3-jet.vercel.app/" target="_blank" rel="noopener noreferrer">
             <Cards imgUrl={gpt3} title={"GPT-3"} desc="A figma design implementation of a landing page of GPT-3. "/>
           </a>
-          {/* <a href="https://eshanpokhrel.github.io/quizGame/" target="_blank" rel="noopener noreferrer">
-            <Cards imgUrl={quiz} title={"Quiz"} desc="A simple and fun quiz app made from HTML5, CSS3 and Javascript to enhance your knowledge. "/>
-          </a>
-          <a href="https://eshanpokhrel.github.io/MeomoryGame/" target="_blank" rel="noopener noreferrer">
-            <Cards imgUrl={memory} title={"Brain Blitz"} desc="A fun game where you have to match all of the same fruits to win, but the time is running out."/>
-          </a> */}
           <a href="https://iphone-15-pro-six.vercel.app/" target="_blank" rel="noopener noreferrer">
             <Cards imgUrl={iPhone} title={"iPhone 15 Pro"} desc="A clone of Apple's new iPhone's website using React, Tailwind, GSAP and ThreeJs."/>
           </a>
           <div>
             <button onClick={handleNavigateToFormPage} className='more-button'>Show More</button>
-            {/* <a href="https://github.com/Eshanpokhrel?tab=repositories" target="_blank" rel="noopener noreferrer">
-              <button className='more-button'>Show More</button>
-            </a> */}
           </div>
         </div>
       </div>
