@@ -41,10 +41,10 @@ const Project = () => {
           <a href="https://mystic-nepal.vercel.app/" target="_blank" rel="noopener noreferrer">
             <Cards imgUrl={Mystic} title="Mystic Nepal Adventure" desc="A real world project made for Mystic Nepal Adventures, showcasing Himalayan treks and cultural tours. The responsive platform features intuitive navigation and secure booking, boosting user engagement. "/>
           </a>
-          <a href="?">
+          <a href="/project">
             <Cards imgUrl={MBA} title="Market Basket Analysis" desc="A web application where you can perform market basket analysis with the help of the FP Growth algorithm."/>
           </a>
-          <a href="https://iphone-15-pro-six.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <a href="https://epeak-beta.vercel.app/" target="_blank" rel="noopener noreferrer">
             <Cards imgUrl={Epeak} title="Epeak Expedition" desc="A real world project made for Epeak Expedition, showcasing Himalayan treks and cultural tours. The responsive platform features intuitive navigation and secure booking, boosting user engagement."/>
           </a>
           <a href="https://movie-app-one-lilac.vercel.app/" target="_blank" rel="noopener noreferrer">
