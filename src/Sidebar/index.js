@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
-import LogoS from '../../src/assets/images/logo-s.png'
+import LogoS from '../../src/assets/images/E.png'
 import LogoSubtitle from '../../src/assets/images/logo_sub.png'
 
 import React, { useState } from 'react'
@@ -20,16 +20,16 @@ const Sidebar = () => {
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink exact='true' activeclassname='active' to='/' onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faHome} color='black'/>
+            <FontAwesomeIcon icon={faHome} color='rgba(243, 245, 247, 0.36)'/>
         </NavLink>
         <NavLink exact='true' activeclassname='active' className='about-link' to='/about' onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faUser} color='black'/>
+            <FontAwesomeIcon icon={faUser} color='rgba(243, 245, 247, 0.36)'/>
         </NavLink>
         <NavLink exact='true' activeclassname='active' className='project-link' to='/project' onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faGears} color='black'/>
+            <FontAwesomeIcon icon={faGears} color='rgba(243, 245, 247, 0.36)'/>
         </NavLink>
         <NavLink exact='true' activeclassname='active' className='contact-link' to='/contact' onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faEnvelope} color='black'/>
+            <FontAwesomeIcon icon={faEnvelope} color='rgba(243, 245, 247, 0.36)'/>
         </NavLink>
         <FontAwesomeIcon 
           onClick={() => setShowNav(false)}
@@ -47,7 +47,7 @@ const Sidebar = () => {
         </li>
         <li>
             <a target='_blank' rel='noreferrer' href='https://github.com/Eshanpokhrel' >
-                <FontAwesomeIcon icon={faGithub} color='black'/>
+                <FontAwesomeIcon icon={faGithub} color='white'/>
             </a>
         </li>
         <li>

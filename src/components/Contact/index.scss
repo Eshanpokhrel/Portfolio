@@ -80,6 +80,11 @@
         border: 1px solid #ffd700;
         float: right;
         border-radius: 4px;
+        cursor: pointer;
+    }
+    .flat-button:hover{
+        background: #ffd700;
+        color: #444;
     }
 }
 

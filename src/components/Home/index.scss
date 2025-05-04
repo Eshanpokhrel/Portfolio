@@ -50,8 +50,8 @@
     }
 
     h2{
-        color: #fe6a00;
-        font-size: 14px;
+        color: #fff;
+        font-size: 17px;
         font-weight: 400;
         margin-top: 60px;
         font-family: 'sans-serif';
@@ -96,7 +96,7 @@
             position: absolute;
             right: 83px;
             bottom: 113px;
-            color: yellow;
+            color: white;
             font-size: 28px;
             font-family: 'La Belle Aurore';
         }
@@ -124,7 +124,7 @@
         
         @keyframes fill {
             to{
-                fill: yellow
+                fill: #FFFF
             }        
         }
     

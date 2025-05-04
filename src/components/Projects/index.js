@@ -1,14 +1,14 @@
-import Loader from 'react-loaders'
-import './index.scss'
-import movie from '../../assets/images/movie.png'
-import gpt3 from '../../assets/images/gpt3.png'
-
-import iPhone from '../../assets/images/iP-15.png'
-import helou from '../../assets/images/helou.png'
 import React, { useEffect, useState } from 'react'
-import AnimatedLetters from '../AnimatedLetters'
-import Cards from '../../Cards'
 import { useNavigate } from 'react-router-dom'
+import './index.scss'
+import Cards from '../../Cards'
+import Loader from 'react-loaders'
+import AnimatedLetters from '../AnimatedLetters'
+
+import movie from '../../assets/images/movie.png'
+import MBA from '../../assets/images/MBA.png'
+import Mystic from '../../assets/images/Mystic.png'
+import Epeak from '../../assets/images/Epeak.png'
 
 const Project = () => {
 
@@ -38,17 +38,17 @@ const Project = () => {
           </p>
         </div>
         <div className="project-container">
-          <a href="https://movie-app-one-lilac.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <Cards imgUrl={movie} title={"Movies"} desc="A web application where you can search movies and get torrent links to download the movies. "/>
+          <a href="https://mystic-nepal.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <Cards imgUrl={Mystic} title="Mystic Nepal Adventure" desc="A real world project made for Mystic Nepal Adventures, showcasing Himalayan treks and cultural tours. The responsive platform features intuitive navigation and secure booking, boosting user engagement. "/>
           </a>
-          <a href="https://helou.onrender.com/" target="_blank" rel="noopener noreferrer">
-            <Cards imgUrl={helou} title={"helou"} desc="A fullstack application where you can chat in real time, made with MERN Stack and Socketio."/>
-          </a>
-          <a href="https://gpt-3-jet.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <Cards imgUrl={gpt3} title={"GPT-3"} desc="A figma design implementation of a landing page of GPT-3. "/>
+          <a href="?">
+            <Cards imgUrl={MBA} title="Market Basket Analysis" desc="A web application where you can perform market basket analysis with the help of the FP Growth algorithm."/>
           </a>
           <a href="https://iphone-15-pro-six.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <Cards imgUrl={iPhone} title={"iPhone 15 Pro"} desc="A clone of Apple's new iPhone's website using React, Tailwind, GSAP and ThreeJs."/>
+            <Cards imgUrl={Epeak} title="Epeak Expedition" desc="A real world project made for Epeak Expedition, showcasing Himalayan treks and cultural tours. The responsive platform features intuitive navigation and secure booking, boosting user engagement."/>
+          </a>
+          <a href="https://movie-app-one-lilac.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <Cards imgUrl={movie} title={"Movies"} desc="A web application where you can search movies, get details of the movies and get torrent links to download and direct links to download the movies. "/>
           </a>
           <div>
             <button onClick={handleNavigateToFormPage} className='more-button'>Show More</button>
