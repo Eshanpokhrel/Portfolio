@@ -1,0 +1,323 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/helvetica-neu.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'La Belle Aurore';
+  src: url('/fonts/LaBelleAurore.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    @apply m-0 text-[11px] leading-[1.4] bg-black text-neutral-600 overflow-hidden;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  input,
+  textarea {
+    font-family: 'Helvetica Neue';
+  }
+}
+
+@theme {
+  /* Custom colors */
+  --color-primary: #ffd700;
+
+  /* Custom animations */
+  --animation-fadeIn: fadeIn 1s forwards;
+  --animation-pulse: pulse 1s;
+  --animation-fadeOut: fadeOut 0.5s 0.8s forwards;
+
+  /* Custom font families */
+  --font-family-helvetica: "Helvetica Neue", sans-serif;
+  --font-family-la-belle: "La Belle Aurore", cursive;
+  --font-family-coolvetica: "Coolvetica", sans-serif;
+
+  /* Custom breakpoints */
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1251px;
+}
+
+/* Define keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* Optional: Apply custom styles using the defined theme */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.font-helvetica {
+  font-family: var(--font-family-helvetica);
+}
+
+.font-la-belle {
+  font-family: var(--font-family-la-belle);
+}
+
+.font-coolvetica {
+  font-family: var(--font-family-coolvetica);
+}
+
+.animate-fadeIn {
+  animation: var(--animation-fadeIn);
+}
+
+.animate-pulse {
+  animation: var(--animation-pulse);
+}
+
+.animate-fadeOut {
+  animation: var(--animation-fadeOut);
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ===============================
+   Cube styles (CSS + Tailwind)
+   =============================== */
+
+@layer components {
+
+  /* Container */
+  .stage-cube-container {
+    @apply relative flex items-center justify-center h-full w-full;
+  }
+
+  @media (max-width: 1024px) {
+    .stage-cube-container {
+      @apply h-[50%] ;
+    }
+  }
+
+  /* Spinner */
+  .cube-spinner {
+    @apply relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    animation: spincube 12s ease-in-out infinite;
+  }
+
+  @media (max-width: 1024px) {
+    .cube-spinner {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  /* Faces */
+  .cube-face {
+    @apply absolute flex items-center justify-center bg-white/60 shadow-[0_0_5px_whitesmoke] text-[110px];
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (max-width: 1024px) {
+    .cube-face {
+      width: 100px;
+      height: 100px;
+      @apply text-[60px];
+    }
+  }
+
+  /* Face transforms (desktop) */
+  .face1 {
+    transform: translateZ(150px);
+  }
+
+  .face2 {
+    transform: rotateY(90deg) translateZ(150px);
+  }
+
+  .face3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+  }
+
+  .face4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(150px);
+  }
+
+  .face5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
+  }
+
+  .face6 {
+    transform: rotateX(-90deg) translateZ(150px);
+  }
+
+  /* Face transforms (mobile) */
+  @media (max-width: 1024px) {
+    .face1 {
+      transform: translateZ(50px);
+    }
+
+    .face2 {
+      transform: rotateY(90deg) translateZ(50px);
+    }
+
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
+    }
+
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
+    }
+
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
+    }
+
+    .face6 {
+      transform: rotateX(-90deg) translateZ(50px);
+    }
+  }
+}
+
+/* ===============================
+   Animation (plain CSS)
+   =============================== */
+
+@keyframes spincube {
+
+  0%,
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  16% {
+    transform: rotateY(-90deg);
+  }
+
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+
+  66% {
+    transform: rotateY(-270deg) rotateZ(90deg);
+  }
+
+  83% {
+    transform: rotateX(90deg) rotateZ(90deg);
+  }
+}
+
+/*================================
+  SVG Aniation
+  ================================*/
+
+.name {
+  /* position: absolute;
+  width: 80%;
+  height: auto;
+  top: 15%;
+  right: 0; */
+  animation: fill 0.5s linear forwards 2.3s;
+}
+
+#img path {
+  stroke-dasharray: 2491px;
+  /*N*/
+  stroke-dashoffset: 2491px;
+  animation: draw 5s ease-in-out forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  to {
+    fill: #FFFF
+  }
+}
