@@ -50,7 +50,7 @@ export default function Sidebar() {
       </div>
 
       {/* Sidebar for Desktop */}
-      <div className="hidden sm:flex flex-col z-[999] justify-between h-screen w-[6rem] border-r border-white/30 bg-black fixed left-0 top-0 py-6 px-4">
+      <div className="hidden sm:flex flex-col z-999 justify-between h-screen w-24 border-r border-white/30 bg-black fixed left-0 top-0 py-6 px-4">
         <Link href="/" onClick={() => setShowNav(false)}>
           <div className="flex flex-col items-center gap-2">
             <Image src={LogoS} alt="logo" width={20} height={20} />
