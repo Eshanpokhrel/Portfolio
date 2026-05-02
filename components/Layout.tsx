@@ -8,7 +8,7 @@ interface LayoutProps {
 
 const ClientLayout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="flex min-h-screen bg-black text-primary font-family-helvetica text-[18px]">
+    <div className="flex h-screen overflow-hidden bg-black text-primary font-family-helvetica text-[18px]">
       <div className="flex-1 flex flex-col justify-between sm:px-20 sm:pt-10 pb-10 relative overflow-auto sm:overflow-hidden">
         {/* Top Tags */}
         <div className="absolute top-28 sm:top-6 left-1 sm:left-32 space-y-3 pointer-events-none">
@@ -21,7 +21,7 @@ const ClientLayout: React.FC<LayoutProps> = ({ children }) => {
         </main>
 
         {/* Bottom Tags */}
-        <div className="absolute bottom-6 left-1 sm:left-32 space-y-3 pointer-events-none">
+        <div className="sm:absolute sm:bottom-6 ml-1 sm:ml-0 sm:left-32 space-y-3 pointer-events-none">
           <div className="pl-6 font-family-la-belle">&lt;/body&gt;</div>
           <div className="font-family-la-belle">&lt;/html&gt;</div>
         </div>

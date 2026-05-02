@@ -63,10 +63,10 @@ const Projects = () => {
           </div>
         </div>
         {/* Right Column - Projects Grid */}
-        <div ref={gridRef} className="invisible col-span-1 mx-auto h-fit w-1/2 lg:w-full flex flex-col justify-between items-center gap-6">
-          <div className="w-full h-fit grid grid-cols-2 gap-2 lg:gap-6 items-center">
+        <div ref={gridRef} className="invisible col-span-1 mx-auto h-fit w-full sm:w-3/4 lg:w-full flex flex-col justify-between items-center gap-6">
+          <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-2 lg:gap-6 items-center">
             <a
-              href="https://mystic-nepal.vercel.app/"
+              href="https://mynepaladventures.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="h-full w-full"
@@ -74,23 +74,23 @@ const Projects = () => {
               <Card
                 imgUrl="/images/Mystic.png"
                 title="Mystic Nepal Adventure"
-                description="A real world project made for Mystic Nepal Adventures, showcasing Himalayan treks and cultural tours. The responsive platform features intuitive navigation and secure booking, boosting user engagement."
+                description="A comprehensive travel platform where users can explore diverse trekking and expedition packages, seamlessly schedule holidays, and manage bookings through a dedicated admin dashboard."
               />
             </a>
             <a
-              href="https://movie-app-one-lilac.vercel.app/"
+              href="https://www.wowbrowsandspa.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="h-full w-full"
             >
               <Card
-                imgUrl="/images/movie.png"
-                title="Movies"
-                description="A web application where you can search movies, get details of the movies and get torrent links to download and direct links to download the movies."
+                imgUrl="/images/Wow.png"
+                title="Wow Brows & Spa"
+                description="A full-stack beauty salon application allowing clients to explore services and book appointments with preferred staff. The platform integrates tailored admin and employee dashboards."
               />
             </a>
             <a
-              href="https://eshanpokhrel.com.np/projects"
+              href="https://github.com/Eshanpokhrel/market-basket-analysis"
               target="_blank"
               rel="noopener noreferrer"
               className="h-full w-full"
@@ -102,7 +102,7 @@ const Projects = () => {
               />
             </a>
             <a
-              href="https://epeak-beta.vercel.app/"
+              href="https://epeakexpedition.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="h-full w-full"
@@ -110,7 +110,7 @@ const Projects = () => {
               <Card
                 imgUrl="/images/Epeak.png"
                 title="Epeak Expedition"
-                description="A real world project made for Epeak Expedition, showcasing Himalayan treks and cultural tours. The responsive platform features intuitive navigation and secure booking, boosting user engagement."
+                description="An intuitive travel site built for Epeak Expedition, enabling users to discover and book holiday packages, tours, and treks. The platform includes a robust admin dashboard."
               />
             </a>
           </div>
@@ -118,7 +118,7 @@ const Projects = () => {
             href="https://github.com/Eshanpokhrel?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
-            className=" w-1/2 py-1 px-2 lg:py-4 border text-center text-lg lg:text-3xl border-yellow-400 text-yellow-400 font-bold rounded-md hover:bg-yellow-400 hover:text-black transition-all"
+            className=" w-full sm:w-1/2 mb-6 sm:mb-0 py-4 px-2 border text-center text-2xl sm:text-xl lg:text-3xl border-yellow-400 text-yellow-400 font-bold rounded-md hover:bg-yellow-400 hover:text-black transition-all"
           >
             View More
           </a>

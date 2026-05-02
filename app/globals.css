@@ -169,7 +169,7 @@
 
   @media (max-width: 1024px) {
     .stage-cube-container {
-      @apply h-[50%] ;
+      @apply h-[50%];
     }
   }
 
