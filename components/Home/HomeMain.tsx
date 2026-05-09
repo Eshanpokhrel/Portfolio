@@ -2,8 +2,6 @@
 // app/page.tsx
 import Link from "next/link";
 import Title from "../Title";
-import Image from "next/image";
-import LogoTitle from "@/public/images/E.png";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 
@@ -61,7 +59,7 @@ export default function Home() {
         each: 1 / letters.length,
       },
       ease: "power4.inOut",
-      delay: 0.3, // start after SVG/path feels right
+      delay: 0.3, 
     });
   }
   }, []);
